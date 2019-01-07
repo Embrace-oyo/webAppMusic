@@ -1,0 +1,25 @@
+// css函数
+@import "variable.styl"
+@import 'mixin.styl'
+body, html
+  line-height: 1
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback'
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+  color: $color-text
+  position:relative
+  &:before
+    content: ''
+    width:100%
+    height:0
+    padding-bottom:100vh
+    overflow: hidden
+    bg-image('images/bg.jpg')
+    background-size:112%
+    position: absolute
+    top:0
+    left:0
+    bottom:0
+    right:0
+    filter: blur(2px);
+
